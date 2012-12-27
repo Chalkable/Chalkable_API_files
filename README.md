@@ -1,4 +1,4 @@
-<h1>Chalkable-post-message-API and Example HTML interaction</h1>
+<h1>Chalkable Example Application Interaction</h1>
 
 <p>These files show an example of an html/css/javascript interaction between the Chalkable API and a web app. The chlk-post-message-api.js file is a necessary component for your web app to interact with Chalkable</p>
 
