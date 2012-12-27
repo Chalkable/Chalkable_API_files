@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example App</title>
+    <style>
+        .mode{
+            display: none;
+        }
+
+        .current-mode{
+            display: block;
+        }
+        #title{
+            font-size: 30px;
+            text-align: center;
+            color:white;
+            border-bottom: 2px solid white;
+        }
+    </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://chalkable.com/Scripts/api/chlk-post-message-api.js"></script>
+
+    <script type="text/javascript">
+        CHLK_MESSENGER.addYourself(function () {
+            return true;
+        });
+        CHLK_MESSENGER.showPlus();
+
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+            );
+}
+
+        jQuery(document).ready(function(){
+           var mode = getURLParameter("mode");
+
+           if (mode !== undefined && mode !== null){
+               jQuery(".mode").removeClass('current-mode');
+               jQuery('.' + mode).addClass('current-mode');
+               jQuery('#title').html(mode);
+           }
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="title"></div>
+    <div class = "mode view">Students (or Teacher) viewing you application in the New Item (not grading section) mode:<br />http://www.EdTechApp.com/mode=myview</div>
+    <div class = "mode edit">Teacher preparing your app to be attached to New Item assignment:<br />http://www.EdTechApp.com/mode=edit</div>
+    <div class = "mode myview">User viewing your app via My Apps page: <br />http://www.EdTechApp.com/mode=myview</div>
+    <div class = "mode gradingview">Teacher reviewing students’ work in New Item grading area: <br />http://www.EdTechApp.com/mode=gradingview</div>
+</body>
+</html>
