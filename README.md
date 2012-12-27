@@ -1,9 +1,12 @@
 <h1>Chalkable-post-message-API and Example HTML interaction</h1>
 
-<p>The chlk-post-message-api.js file is a necessary component for your web app to interact with Chalkable</p>
+<p>These files show an example of an html/css/javascript interaction between the Chalkable API and a web app. The chlk-post-message-api.js file is a necessary component for your web app to interact with Chalkable</p>
 
-<p>Also included is an example of an html/css/javascript interaction between the Chalkable API and a web app<p>
+<p><b>Your app should include a link to our hosted version of this file (as it is subject to updates):</b></p>
+<pre><code>&lt;script type="text/javascript" src="http://chalkable.com/Scripts/api/chlk-post-message-api.js"&gt;&lt;/script&gt;</code></pre>
 
+<p>Feel free to check it out here to see exactly what we're doing behind the scenes. <p>
+<br>
 <p>Your JavaScript code should register a callback that will be called when the teacher clicks ATTACH. This will let Chalkable know which function of yours to call when the teacher clicks ATTACH.</p>
 
 <p>This is handled by the showPlus method</p>
