@@ -31,10 +31,10 @@ CHLK_MESSENGER.showPlus();
           
 <p><b>The other interaction occurs with our URL Modes</b>. They are appended to the url of your app as the user interacts with it in Chalkable.</p>
 <ul>
-<li><b>view:</b> example - <pre><code>http://www.EdTechApp.com/mode=view</code></pre></li>
-<li><b>edit</b> example - <pre><code>http://www.EdTechApp.com/mode=edit</code></pre></li>
-<li><b>myView</b> example - <pre><code>http://www.EdTechApp.com/mode=myview</code></pre> </li>
-<li><b>gradingView</b> example - <pre><code>http://www.EdTechApp.com/mode=gradingview</code></pre></li>
+<li><b>view:</b> example - <pre><code>http://www.EdTechApp.com/?mode=view</code></pre></li>
+<li><b>edit</b> example - <pre><code>http://www.EdTechApp.com/?mode=edit</code></pre></li>
+<li><b>myView</b> example - <pre><code>http://www.EdTechApp.com/?mode=myview</code></pre> </li>
+<li><b>gradingView</b> example - <pre><code>http://www.EdTechApp.com/?mode=gradingview</code></pre></li>
 </ul>
 
 <b>For advanced integration, you must prepare your app to handle this interaction. There are simple Javascript methods you can add to take care of this (check out the files)</b>
