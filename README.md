@@ -12,14 +12,14 @@
 <p>This is handled by the addYourself and saveAndClose methods</p>
 <pre><code>
 function saveAndClose(){
-		//Can be called in ?mode=edit (when teacher clicks ATTACH) or ?mode=view (when user clicks SAVE)
-        //For saving, finalizing and anything else your app might need to do before closing. 
+        //For saving, finalizing and anything else your app might need to do before closing.
+    	//Can be called in mode=edit (when teacher clicks ATTACH) or mode=view (when user clicks SAVE)
         //return true if your app is ready for the iframe to be closed and the app to be attached.
     return true;
 }
 CHLK_MESSENGER.addYourself(saveAndClose);
-		//Should be called when teacher clicks ATTACH
-
+    	//Should be called on app start to register a callback for attach and save buttons
+ 
 </code></pre>
 <p>Note: Your app should <pre><code>return false</code></pre> if the teacher, for example, deletes a required field after showplus is called and the ATTACH button is active.</p>
 
